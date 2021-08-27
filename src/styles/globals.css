@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'GDS Transport Light';
+    font-weight: 400;
+    src: url(/static/fonts/GDSTransportWebsite.woff2) format('woff2'), url(/static/fonts/GDSTransportWebsite.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'GDS Transport Bold';
+    font-weight: 700;
+    src: url(/static/fonts/GDSTransportWebsite-Bold.woff2) format('woff2'), url(/static/fonts/GDSTransportWebsite-Bold.woff) format('woff');
+}
+
+body {
+    color: #222;
+    font-family: 'GDS Transport Light', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    font-size: 19px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'GDS Transport Bold', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.container {
+    margin: 0 32px;
+    display: grid;
+    grid-template-columns: 256px auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "header header"
+      "sidebar main"
+      "footer footer";
+    column-gap: 32px;
+  }
+
+a {
+    color: #1d70b8;
+}
